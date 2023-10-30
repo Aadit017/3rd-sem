@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto&family=Sacramento&display=swap');
-h1{
-    margin-top:10px;
+
+h1 {
+    margin-top: 10px;
 }
+
 * {
     border: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     color: white;
     text-decoration: underline;
 }
-a:hover{
-    color:purple;
+
+a:hover {
+    color: purple;
     transition-duration: .23s;
 }
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
     color: aliceblue;
 }
-dd{
+
+dd {
     margin-top: 1vh;
     font-size: small;
 }
@@ -29,31 +35,34 @@ dd{
 .bg {
     display: grid;
     position: relative;
-    height: 13  0vh;
+    height: 13 0vh;
     background: linear-gradient(168deg, deepskyblue, darkviolet, #72227a);
     background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 1s ease infinite;
 }
 
 .card {
     position: relative;
     margin: 10vh;
-    height: 100vh;
+    height: 120vh;
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
-    border-radius: 5px;
+    /* border-radius: 5px;/ */
     backdrop-filter: blur(14px);
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
 }
-.list{
-    margin:15vh;
+
+.list {
+    margin: 15vh;
     display: grid;
     grid-auto-flow: row;
     height: 50%;
 }
-.point{
-    margin-bottom:5vh;
+
+.point {
+    margin-bottom: 5vh;
 }
+
 @keyframes gradient-animation {
     0% {
         background-position: 0% 50%;
@@ -69,21 +78,42 @@ dd{
 
 }
 
+.page-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align:justify;
+    
+}
+
+.syllabus {
+    margin-top: 10vh;
+    margin-left:10px ;
+    margin-right:10px ;
+    font-size: x-small;
+}
+
 @media (max-width:768px) {
-    .bg{
+    .bg {
         height: 150vh;
     }
-    .list{
-        margin:10vh;
+
+    .list {
+        margin: 10vh;
         font-size: small;
     }
-    .point{
-        margin-top:5vh;
+
+    .point {
+        margin-top: 5vh;
     }
+
     .card {
         margin: 0;
         backdrop-filter: none;
         height: 10vh;
         border: none;
     }
+
+
 }
