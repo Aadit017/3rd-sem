@@ -46,7 +46,7 @@ dd {
     margin: 10vh;
     height: 120vh;
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
-    /* border-radius: 5px;/ */
+    border-radius: 1%;
     backdrop-filter: blur(14px);
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
